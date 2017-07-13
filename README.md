@@ -9,3 +9,9 @@ Git-hub notification feed. Notification for various github activities.
 * Receive notification for follows, unfollows.
 * Stream live-feed to study github usage.
 * And MANYYYYY MORE!
+* Star count and notification
+
+
+Please feel free to contribute to the different interesting metric.
+
+
