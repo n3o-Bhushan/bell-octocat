@@ -3,10 +3,11 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/octocat')
+@app.route('/octocat', methods=['GET'])
 def helloOcto():
-	git = requests.get('https://api.github.com/users/octocat/orgs')
-	return render_template(index.html, load=json.dump(git))
+	git = requests.get('https://api.github.com/users/n3o-bhushan/bio')
+	print git
+	return render_template('index.html', load=git)
 
 
 @app.route('/')
