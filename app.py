@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/octocat')
 def helloOcto():
-	return "Boom"
+	git = requests.get('https://api.github.com/users/octocat/orgs')
+	return render_template(index.html, load=json.dump(git))
 
 
 @app.route('/')
